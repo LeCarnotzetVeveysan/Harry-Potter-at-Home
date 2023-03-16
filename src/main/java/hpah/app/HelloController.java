@@ -1,4 +1,4 @@
-package rpghp.rph_potter;
+package hpah.app;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

@@ -1,4 +1,4 @@
-package rpghp.rph_potter;
+package hpah.app;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
