@@ -1,4 +1,4 @@
 package hpah.core;
 
-public class AbstractEnemy {
+public class AbstractEnemy extends Character {
 }

@@ -1,4 +1,4 @@
 package hpah.core;
 
-public class Boss {
+public class Boss extends AbstractEnemy {
 }
