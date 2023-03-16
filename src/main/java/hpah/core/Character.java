@@ -8,4 +8,8 @@ public abstract class Character {
 
     public void attack(){}
 
+    public boolean isDead(){
+        return health <= 0;
+    }
+
 }

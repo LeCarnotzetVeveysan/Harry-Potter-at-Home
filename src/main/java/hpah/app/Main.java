@@ -43,6 +43,9 @@ public class Main {
 
         if(choice.equals("y") || choice.equals("yes")){
             System.out.println("Perfect");
+
+            Level1 year1 = new Level1();
+
         } else {
             System.out.println("Come back next year then.");
         }

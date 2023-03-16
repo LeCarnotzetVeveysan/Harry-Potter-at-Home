@@ -30,6 +30,10 @@ public class Wizard extends Character {
         wand = inputWand;
     }
 
+    public void learnSpell(Spell inputSpell){
+        knownSpells.add(inputSpell);
+    }
+
     public String getName(){
         return name;
     }

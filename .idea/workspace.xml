@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Can create wizard and assign house">
+    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Finished initialization">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hpah/core/AbstractLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Level1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hpah/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Wizard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +58,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="HPAH" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="hpah.app.Main" />
+      <module name="rph_potter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678704584290</updated>
       <workItem from="1678704585472" duration="868000" />
-      <workItem from="1678947999257" duration="6847000" />
+      <workItem from="1678947999257" duration="8443000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678704823002</created>
@@ -100,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678953068582</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finished initialization">
+      <created>1678955499133</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678955499133</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +132,7 @@
     <MESSAGE value="Added methods and relation in UML" />
     <MESSAGE value="Starteds working on Wiazrds &amp; pets &amp; house" />
     <MESSAGE value="Can create wizard and assign house" />
-    <option name="LAST_COMMIT_MESSAGE" value="Can create wizard and assign house" />
+    <MESSAGE value="Finished initialization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished initialization" />
   </component>
 </project>
