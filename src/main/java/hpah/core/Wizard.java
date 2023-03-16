@@ -26,7 +26,15 @@ public class Wizard extends Character {
         house = inputHouse;
     }
 
+    public void setWand(Wand inputWand){
+        wand = inputWand;
+    }
+
     public String getName(){
         return name;
+    }
+
+    public House getHouse(){
+        return house;
     }
 }

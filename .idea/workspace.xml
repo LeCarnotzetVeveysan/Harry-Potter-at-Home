@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Added methods and relation in UML">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hpah/app/Main.java" afterDir="false" />
+    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Starteds working on Wiazrds &amp; pets &amp; house">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Core.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/SortingHat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/SortingHat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Wand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Wand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Wizard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678704584290</updated>
       <workItem from="1678704585472" duration="868000" />
-      <workItem from="1678947999257" duration="3923000" />
+      <workItem from="1678947999257" duration="4566000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678704823002</created>
@@ -92,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678950353826</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Starteds working on Wiazrds &amp; pets &amp; house">
+      <created>1678952429183</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678952429183</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +105,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Module refactor + Added classes" />
     <MESSAGE value="Added methods and relation in UML" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added methods and relation in UML" />
+    <MESSAGE value="Starteds working on Wiazrds &amp; pets &amp; house" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starteds working on Wiazrds &amp; pets &amp; house" />
   </component>
 </project>
