@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Starteds working on Wiazrds &amp; pets &amp; house">
+    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Can create wizard and assign house">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hpah/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Wand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Wand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Wizard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678704584290</updated>
       <workItem from="1678704585472" duration="868000" />
-      <workItem from="1678947999257" duration="4566000" />
+      <workItem from="1678947999257" duration="6847000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678704823002</created>
@@ -95,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678952429183</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Can create wizard and assign house">
+      <created>1678953068582</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678953068582</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +111,7 @@
     <MESSAGE value="Module refactor + Added classes" />
     <MESSAGE value="Added methods and relation in UML" />
     <MESSAGE value="Starteds working on Wiazrds &amp; pets &amp; house" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starteds working on Wiazrds &amp; pets &amp; house" />
+    <MESSAGE value="Can create wizard and assign house" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can create wizard and assign house" />
   </component>
 </project>
