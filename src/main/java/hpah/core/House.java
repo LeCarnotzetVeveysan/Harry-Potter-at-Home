@@ -1,4 +1,9 @@
 package hpah.core;
 
-public class House {
+public enum House {
+
+    GRYFFINDOR,
+    SLYTHERIN,
+    HUFFLEPUFF,
+    RAVENCLAW
 }
