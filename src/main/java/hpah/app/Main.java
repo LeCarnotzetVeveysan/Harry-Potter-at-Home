@@ -2,12 +2,19 @@ package hpah.app;
 
 import hpah.core.*;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+
+        Game mainGame = new Game();
+        mainGame.playGame();
+
         Scanner consoleScanner = new Scanner(System.in);
+        int allowedFails = 3;
+
         System.out.println("Welcome to Harry Potter at Home");
         System.out.println("What's your name ? ");
         Wizard wizard = new Wizard(consoleScanner.nextLine());
@@ -45,6 +52,17 @@ public class Main {
             System.out.println("Perfect");
 
             Level1 year1 = new Level1();
+            Level2 year2 = new Level2();
+            ArrayList<AbstractLevel> years = new ArrayList<>();
+            years.add(year1);
+
+            boolean succeeded = year1.playLevel(wizard);
+            if(succeeded){
+                System.out.println("Impressive !");
+            } else {
+                year1.playLevel(wizard);
+
+            }
 
         } else {
             System.out.println("Come back next year then.");

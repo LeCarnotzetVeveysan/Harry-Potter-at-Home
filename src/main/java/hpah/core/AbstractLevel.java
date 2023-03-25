@@ -4,9 +4,10 @@ import java.util.ArrayList;
 
 public abstract class AbstractLevel {
 
-    private String location;
     private ArrayList<Spell> taughtSpells = new ArrayList<>();
     private ArrayList<AbstractEnemy> enemies = new ArrayList<>();
+
+    public abstract void initializeLevel();
 
     public void addEnemy(AbstractEnemy enemy){
         enemies.add(enemy);
@@ -17,6 +18,13 @@ public abstract class AbstractLevel {
     }
     public ArrayList<Spell> getTaughtSpells(){
         return taughtSpells;
+    }
+
+    public void learnSpells(Wizard player){
+        for(Spell s : taughtSpells){
+            player.learnSpell(s);
+            System.out.println(s);
+        }
     }
 
     public ArrayList<AbstractEnemy> getEnemies() {
@@ -31,4 +39,20 @@ public abstract class AbstractLevel {
         }
         return true;
     }
+
+    public boolean isHeroAlive(Wizard player){
+        return !player.isDead();
+    }
+
+    public boolean playLevel(Wizard player){
+        initializeLevel();
+        learnSpells(player);
+        while (!isLevelCleared() && isHeroAlive(player)){
+            System.out.println("coucou");
+
+        }
+
+        return isHeroAlive(player);
+    }
+
 }

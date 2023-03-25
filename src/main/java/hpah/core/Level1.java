@@ -7,4 +7,8 @@ public class Level1 extends AbstractLevel {
         super.addEnemy(enemy1);
     }
 
+    @Override
+    public void initializeLevel() {
+
+    }
 }
