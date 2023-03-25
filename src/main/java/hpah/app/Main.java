@@ -52,16 +52,20 @@ public class Main {
             System.out.println("Perfect");
 
             Level1 year1 = new Level1();
-            Level2 year2 = new Level2();
             ArrayList<AbstractLevel> years = new ArrayList<>();
             years.add(year1);
 
-            boolean succeeded = year1.playLevel(wizard);
-            if(succeeded){
-                System.out.println("Impressive !");
-            } else {
-                year1.playLevel(wizard);
+            for (int i = 0; i <= 0; i++){
+                boolean succeeded = years.get(i).playLevel(wizard);
+                if(!succeeded){
+                    break;
+                }
+            }
 
+            if(wizard.isDead()){
+                System.out.println("Sadly, you can't get your wiazrds diploma.");
+            } else {
+                System.out.println("Congratulations, you are now a wizard harry !");
             }
 
         } else {

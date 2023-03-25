@@ -1,6 +1,9 @@
 package hpah.core;
 
+import hpah.other.OptiScanner;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public abstract class AbstractLevel {
 
@@ -34,25 +37,22 @@ public abstract class AbstractLevel {
     public boolean isLevelCleared(){
         for(AbstractEnemy e : enemies){
             if(!e.isDead()){
+                System.out.println("Un enemi est encore vivant");
                 return false;
             }
         }
         return true;
     }
 
-    public boolean isHeroAlive(Wizard player){
-        return !player.isDead();
-    }
-
     public boolean playLevel(Wizard player){
-        initializeLevel();
+        System.out.println(Arrays.toString(enemies.toArray()));
         learnSpells(player);
-        while (!isLevelCleared() && isHeroAlive(player)){
+        while (!isLevelCleared() && !player.isDead()){
             System.out.println("coucou");
 
         }
 
-        return isHeroAlive(player);
+        return !player.isDead();
     }
 
 }

@@ -3,8 +3,8 @@ package hpah.core;
 public class Level1 extends AbstractLevel {
 
     public Level1(){
-        Enemy enemy1 = new Enemy();
-        super.addEnemy(enemy1);
+        Enemy troll = new Enemy("Troll", 100, 10);
+        super.addEnemy(troll);
     }
 
     @Override
