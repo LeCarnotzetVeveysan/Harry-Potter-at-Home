@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Small refactor">
+    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Work on spells">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/app/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/app/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hpah/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/app/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/AbstractLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/AbstractLevel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/AbstractSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/AbstractSpell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/ForbiddenSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/ForbiddenSpell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Character.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Level1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Level1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Spell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Wizard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +92,7 @@
       <workItem from="1679436130713" duration="11000" />
       <workItem from="1679569958429" duration="1031000" />
       <workItem from="1679755638801" duration="2572000" />
-      <workItem from="1679832024854" duration="664000" />
+      <workItem from="1679832024854" duration="2182000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678704823002</created>
@@ -156,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679757841289</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Work on spells">
+      <created>1679832783635</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679832783636</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +180,7 @@
     <MESSAGE value="Started work on levels" />
     <MESSAGE value="Diverse work" />
     <MESSAGE value="Small refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small refactor" />
+    <MESSAGE value="Work on spells" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work on spells" />
   </component>
 </project>

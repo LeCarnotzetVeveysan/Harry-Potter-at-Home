@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public abstract class AbstractLevel {
+
+    private OptiScanner scanner = new OptiScanner(System.in);
     private ArrayList<Spell> taughtSpells = new ArrayList<>();
     private ArrayList<AbstractEnemy> enemies = new ArrayList<>();
 
@@ -23,7 +25,7 @@ public abstract class AbstractLevel {
     public void learnSpells(Wizard player){
         for(Spell s : taughtSpells){
             player.learnSpell(s);
-            System.out.println(s);
+            System.out.println("You learned the spell " + s.getName());
         }
     }
 
@@ -34,7 +36,6 @@ public abstract class AbstractLevel {
     public boolean isLevelCleared(){
         for(AbstractEnemy e : enemies){
             if(!e.isDead()){
-                System.out.println("Un enemi est encore vivant");
                 return false;
             }
         }
@@ -44,9 +45,16 @@ public abstract class AbstractLevel {
     public boolean playLevel(Wizard player){
         System.out.println(Arrays.toString(enemies.toArray()));
         learnSpells(player);
-        while (!isLevelCleared() && !player.isDead()){
-            System.out.println("coucou");
 
+        while (!isLevelCleared() && !player.isDead()){
+
+            for(int i = 0; i <= player.getKnownSpells().size() - 1; i++){
+                System.out.println(i + ") " + player.getKnownSpells().get(i).getName());
+            }
+
+            System.out.println("What spell do you want to use ?");
+            int choice = scanner.requestInt();
+            player.getKnownSpells().get(choice).spellMechanic();
         }
 
         return !player.isDead();

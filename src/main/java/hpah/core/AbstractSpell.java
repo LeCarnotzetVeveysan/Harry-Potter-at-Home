@@ -18,6 +18,10 @@ public abstract class AbstractSpell {
         return spellCode;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public boolean spellAttempt(){
         Random random = new Random();
         double attempt = random.nextDouble(1);

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class Wizard extends Character {
 
-    private String name;
     private Pet pet;
     private Wand wand;
     private House house;
@@ -12,6 +11,7 @@ public class Wizard extends Character {
     private ArrayList<Potion> potions;
 
     public Wizard(String inputName){
+        super.setStats(inputName, 200, 25);
         name = inputName;
         pet = null;
         wand = null;
@@ -40,5 +40,9 @@ public class Wizard extends Character {
 
     public House getHouse(){
         return house;
+    }
+
+    public ArrayList<Spell> getKnownSpells() {
+        return knownSpells;
     }
 }

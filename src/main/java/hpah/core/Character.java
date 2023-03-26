@@ -24,4 +24,9 @@ public abstract class Character {
         health -= amount;
     }
 
+    @Override
+    public String toString(){
+        return name + ", " + health + " HP, " + power + " power";
+    }
+
 }
