@@ -6,11 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public abstract class AbstractLevel {
-
     private ArrayList<Spell> taughtSpells = new ArrayList<>();
     private ArrayList<AbstractEnemy> enemies = new ArrayList<>();
-
-    public abstract void initializeLevel();
 
     public void addEnemy(AbstractEnemy enemy){
         enemies.add(enemy);

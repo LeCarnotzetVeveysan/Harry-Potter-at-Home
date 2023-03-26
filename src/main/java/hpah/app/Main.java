@@ -3,6 +3,7 @@ package hpah.app;
 import hpah.core.*;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -13,7 +14,6 @@ public class Main {
         mainGame.playGame();
 
         Scanner consoleScanner = new Scanner(System.in);
-        int allowedFails = 3;
 
         System.out.println("Welcome to Harry Potter at Home");
         System.out.println("What's your name ? ");
@@ -52,8 +52,7 @@ public class Main {
             System.out.println("Perfect");
 
             Level1 year1 = new Level1();
-            ArrayList<AbstractLevel> years = new ArrayList<>();
-            years.add(year1);
+            ArrayList<AbstractLevel> years = new ArrayList<>(Arrays.asList(year1));
 
             for (int i = 0; i <= 0; i++){
                 boolean succeeded = years.get(i).playLevel(wizard);
@@ -63,7 +62,7 @@ public class Main {
             }
 
             if(wizard.isDead()){
-                System.out.println("Sadly, you can't get your wiazrds diploma.");
+                System.out.println("Sadly, you can't get your wizards diploma.");
             } else {
                 System.out.println("Congratulations, you are now a wizard harry !");
             }
