@@ -21,6 +21,7 @@ public class Spell extends AbstractSpell {
     public void spellMechanic(Wizard player, AbstractEnemy enemy) throws InterruptedException {
         switch (super.getSpellCode()){
             case 'w' -> spellWingardium(player, enemy);
+            case 'a' -> spellAccio(player, enemy);
         }
     }
 
@@ -48,9 +49,11 @@ public class Spell extends AbstractSpell {
 
     private void spellWingardium(Wizard player, AbstractEnemy enemy) throws InterruptedException {
 
-        System.out.println("To beat the troll, you need  to lift up anobject in the room and drop it on it's head. \n" +
-                "You will be given some letters and you must find and object name with some or all of htem \n." +
-                "The quicker you find it, the more damage will be inflicted.");
+        System.out.println("""
+                To beat the troll, you need  to lift up an object in the room and drop it on it's head.\s
+                You will be given some letters and you must find and object name with some or all of item.\s
+                The quicker you find it, the more damage will be inflicted. \s
+                Watching the scene from the movie might help you with this spell.""");
         System.out.println("Are you ready ?");
 
         System.out.println("Are you ready to start the fight (Y - Yes / N - No) ?");
@@ -60,42 +63,37 @@ public class Spell extends AbstractSpell {
             System.out.println("Perfect !");
             String[] objects = new String[]{"tp", "perfume", "manhole"};
             Random random = new Random();
-            while(!enemy.isDead() && !player.isDead()){
-                String chosenObject = objects[random.nextInt(3)];
-                String[] tempLetters = chosenObject.split("");
-                ArrayList<String> letters = new ArrayList<>();
-                for(String s : tempLetters){
-                    letters.add(s);
-                }
-                for(int i = 0; i < random.nextInt(2); i++){
-                    letters.add(String.valueOf((char) random.nextInt(97,122)));
-                }
-                Collections.shuffle(letters);
-                countdown();
-                System.out.println("Letters are " + Arrays.toString(letters.toArray()));
-                long startTime = System.currentTimeMillis();
-                System.out.println("What is the hidden object ?");
-                String answer = scanner.requestString();
-                if(answer.toLowerCase().equals(chosenObject)){
-                    long endTime = System.currentTimeMillis();
-                    int timeTaken = Math.round((endTime - startTime)/1000);
-                    System.out.println("You took " + timeTaken + " seconds to find the object");
-                    int damageDealt = 20 - timeTaken;
-                    System.out.println("You deal " + damageDealt + " to the troll.");
-                    enemy.removeHealth(damageDealt);
-                    System.out.println("He now has " + (Math.max(enemy.getHealth(), 0)) + " health.");
-                } else {
-                    System.out.println("Sadly this isn't an object");
-                }
-                if(enemy.isDead()){
-                    System.out.println("Enemy is dead. Congratulations");
-                } else {
-
-                    enemy.attack(player);
-                    System.out.println("You now have " + player.getHealth() + " health.");
-
-                }
+            String chosenObject = objects[random.nextInt(3)];
+            String[] tempLetters = chosenObject.split("");
+            ArrayList<String> letters = new ArrayList<>();
+            for(String s : tempLetters){
+                letters.add(s);
             }
+            for(int i = 0; i < random.nextInt(2); i++){
+                letters.add(String.valueOf((char) random.nextInt(97,122)));
+            }
+            Collections.shuffle(letters);
+            countdown();
+            System.out.println("Letters are " + Arrays.toString(letters.toArray()));
+            long startTime = System.currentTimeMillis();
+            System.out.println("What is the hidden object ?");
+            String answer = scanner.requestString();
+            if(answer.toLowerCase().equals(chosenObject)){
+                long endTime = System.currentTimeMillis();
+                int timeTaken = Math.round((endTime - startTime)/1000);
+                System.out.println("You took " + timeTaken + " seconds to find the object");
+                int damageDealt = 20 - timeTaken;
+                System.out.println("You deal " + damageDealt + " to the troll.");
+                enemy.removeHealth(damageDealt);
+                System.out.println("He now has " + (Math.max(enemy.getHealth(), 0)) + " health.");
+            } else {
+                System.out.println("Sadly this isn't an object");
+            }
+
         }
+    }
+
+    private void spellAccio(Wizard player, AbstractEnemy enemy) {
+
     }
 }

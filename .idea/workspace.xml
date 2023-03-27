@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="More work">
+    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Working Wingardium leviosa spell mechanic. Need to fill the word bank with objects from the book / movie.&#10;Work on mainGame logic too.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Level3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Level4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Level5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Level6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Level7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hpah/app/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/app/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/app/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/AbstractLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/AbstractLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/AbstractSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/AbstractSpell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Boss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Boss.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/ForbiddenSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/ForbiddenSpell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Level1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Level1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Level2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Level2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Spell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Test.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hpah/other/OptiScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/other/OptiScanner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +101,8 @@
       <workItem from="1679832024854" duration="2236000" />
       <workItem from="1679837457637" duration="1330000" />
       <workItem from="1679856094273" duration="1921000" />
-      <workItem from="1679924986826" duration="1548000" />
+      <workItem from="1679924986826" duration="2031000" />
+      <workItem from="1679943936570" duration="4365000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678704823002</created>
@@ -177,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679834248681</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Working Wingardium leviosa spell mechanic. Need to fill the word bank with objects from the book / movie.&#10;Work on mainGame logic too.">
+      <created>1679927010508</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679927010508</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +206,7 @@
     <MESSAGE value="Small refactor" />
     <MESSAGE value="Work on spells" />
     <MESSAGE value="More work" />
-    <option name="LAST_COMMIT_MESSAGE" value="More work" />
+    <MESSAGE value="Working Wingardium leviosa spell mechanic. Need to fill the word bank with objects from the book / movie.&#10;Work on mainGame logic too." />
+    <option name="LAST_COMMIT_MESSAGE" value="Working Wingardium leviosa spell mechanic. Need to fill the word bank with objects from the book / movie.&#10;Work on mainGame logic too." />
   </component>
 </project>

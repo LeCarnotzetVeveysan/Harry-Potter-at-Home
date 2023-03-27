@@ -1,13 +1,8 @@
 package hpah.other;
 
-import javafx.event.ActionEvent;
-
-import java.io.IOException;
-import java.security.Key;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.io.InputStream;
-
-import static javafx.scene.input.KeyCode.SPACE;
 
 public class OptiScanner {
     private Scanner sc;
@@ -15,9 +10,23 @@ public class OptiScanner {
         sc = new Scanner(inputStream);
     }
 
-    public int requestInt(){
-        int input = sc.nextInt();
-        sc.nextLine();
+    public int requestInt(String desc, int maxNumber){
+        System.out.println(desc);
+
+        int input = -1;
+        boolean validInput = false;
+        do {
+            try {
+                System.out.println("Enter a number:");
+                input = sc.nextInt();
+                validInput = true;
+                sc.nextLine();
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input.");
+                sc.nextLine();
+            }
+        } while (!validInput || input < 0 || input > maxNumber);
+
         return input;
     }
 

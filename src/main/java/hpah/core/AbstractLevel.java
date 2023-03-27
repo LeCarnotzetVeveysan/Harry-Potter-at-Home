@@ -43,19 +43,41 @@ public abstract class AbstractLevel {
     }
 
     public boolean playLevel(Wizard player) throws InterruptedException {
+        //Print level desc
+
+        //Print enemies
         System.out.println(Arrays.toString(enemies.toArray()));
         learnSpells(player);
+        ArrayList<Spell> spells = player.getKnownSpells();
 
         while (!isLevelCleared() && !player.isDead()){
 
-            for(int i = 0; i <= player.getKnownSpells().size() - 1; i++){
-                System.out.println(i + ") " + player.getKnownSpells().get(i).getName());
+            for(int i = 0; i <= spells.size() - 1; i++){
+                System.out.println(i + ") " + spells.get(i).getName());
             }
+
             //Choose enemy iff more than 1
-            int enemyIndex = 0;
-            System.out.println("What spell do you want to use ?");
-            int choice = scanner.requestInt();
-            player.getKnownSpells().get(choice).spellMechanic(player, enemies.get(enemyIndex));
+            int enemyIndex;
+            if(enemies.size() > 1){
+                enemyIndex = scanner.requestInt("Which enemy do you want to attack ?", enemies.size() - 1);
+            } else {
+                enemyIndex = 0;
+            }
+
+            AbstractEnemy chosenEnemy = enemies.get(enemyIndex);
+            String quest = "What spell do you want to use  against " + chosenEnemy.getName() + " ?";
+
+            int choice = scanner.requestInt(quest, spells.size() - 1);
+            Spell chosenSpell = spells.get(choice);
+            if(chosenSpell.spellAttempt()){
+                chosenSpell.spellMechanic(player, chosenEnemy );
+            }
+            if(enemies.get(enemyIndex).isDead()){
+                System.out.println("Enemy is dead. Congratulations");
+            } else {
+                enemies.get(enemyIndex).attack(player);
+            }
+
         }
 
         return !player.isDead();

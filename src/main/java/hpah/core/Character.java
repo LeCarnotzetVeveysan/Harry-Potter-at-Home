@@ -19,6 +19,7 @@ public abstract class Character {
         int damage = (int) Math.round(power * mult);
         target.removeHealth(damage);
         System.out.println(name + " attacks and deals " + damage + " damage to you.");
+        System.out.println("You now have " + target.getHealth() + " health.");
     }
 
     public boolean isDead(){
@@ -31,6 +32,10 @@ public abstract class Character {
 
     public int getPower() {
         return power;
+    }
+
+    public String getName(){
+        return name;
     }
 
     public void removeHealth(int amount){

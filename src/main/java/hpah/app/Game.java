@@ -27,17 +27,11 @@ public class Game {
             coreTypes += i + ") " + Core.values()[i] + " - ";
         }
         coreTypes = coreTypes.substring(0,coreTypes.length() - 3);
-        System.out.println(coreTypes);
-        int chosenCoreIndex, chosenLength;
-        do{
-            chosenCoreIndex = scanner.requestInt();
-        } while(chosenCoreIndex < 0 || chosenCoreIndex >= Core.values().length);
-        Core chosenCore = Core.values()[chosenCoreIndex];
 
-        System.out.println("What length do you want your wand to be (cm) ? :");
-        do{
-            chosenLength = scanner.requestInt();
-        } while(chosenLength <= 0);
+        System.out.println(coreTypes);
+        int chosenCoreIndex = scanner.requestInt("", Core.values().length - 1);
+        Core chosenCore = Core.values()[chosenCoreIndex];
+        int chosenLength = scanner.requestInt("What length do you want your wand to be (cm) ? ", 30);
 
         wizard.setWand(new Wand(chosenCore, chosenLength));
 
@@ -52,9 +46,16 @@ public class Game {
             System.out.println("Perfect");
 
             Level1 year1 = new Level1();
-            ArrayList<AbstractLevel> years = new ArrayList<>(Arrays.asList(year1));
+            Level2 year2 = new Level2();
+            Level3 year3 = new Level3();
+            Level3 year4 = new Level3();
+            Level3 year5 = new Level3();
+            Level3 year6 = new Level3();
+            Level3 year7 = new Level3();
+            ArrayList<AbstractLevel> years = new ArrayList<>(Arrays.asList(
+                    year1, year2, year3, year4, year5, year6, year7 ));
 
-            for (int i = 0; i <= 0; i++){
+            for (int i = 0; i <= 6; i++){
                 boolean succeeded = years.get(i).playLevel(wizard);
                 if(!succeeded){
                     break;
@@ -66,7 +67,7 @@ public class Game {
             if(wizard.isDead()){
                 System.out.println("Sadly, you are dead, therefore you can't get your wizards diploma.");
             } else {
-                System.out.println("Congratulations, you successfully passed all your years at Hogwarts.");
+                System.out.println("You successfully passed all your years at Hogwarts. Here is your diploma");
                 System.out.println("You are now a wizard harry !");
             }
 
