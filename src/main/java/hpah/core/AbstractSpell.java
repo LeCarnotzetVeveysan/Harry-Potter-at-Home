@@ -33,6 +33,5 @@ public abstract class AbstractSpell {
         }
     }
 
-    public abstract void spellMechanic();
-
+    public abstract void spellMechanic(Wizard player, AbstractEnemy enemy) throws InterruptedException;
 }

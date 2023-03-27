@@ -15,7 +15,7 @@ public class Game {
         scanner = new OptiScanner(System.in);
     }
 
-    public void playGame() {
+    public void playGame() throws InterruptedException {
         System.out.println("Welcome to Harry Potter at Home " +  playerName);
 
         Wizard wizard = new Wizard(playerName);
@@ -58,13 +58,16 @@ public class Game {
                 boolean succeeded = years.get(i).playLevel(wizard);
                 if(!succeeded){
                     break;
+                } else {
+                    System.out.println("Congratulations ! You passed year " + (i + 1) + ". " + (6-i) + " years to go.");
                 }
             }
 
             if(wizard.isDead()){
-                System.out.println("Sadly, you can't get your wizards diploma.");
+                System.out.println("Sadly, you are dead, therefore you can't get your wizards diploma.");
             } else {
-                System.out.println("Congratulations, you are now a wizard harry !");
+                System.out.println("Congratulations, you successfully passed all your years at Hogwarts.");
+                System.out.println("You are now a wizard harry !");
             }
 
         } else {

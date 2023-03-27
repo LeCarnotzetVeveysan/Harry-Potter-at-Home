@@ -42,7 +42,7 @@ public abstract class AbstractLevel {
         return true;
     }
 
-    public boolean playLevel(Wizard player){
+    public boolean playLevel(Wizard player) throws InterruptedException {
         System.out.println(Arrays.toString(enemies.toArray()));
         learnSpells(player);
 
@@ -51,10 +51,11 @@ public abstract class AbstractLevel {
             for(int i = 0; i <= player.getKnownSpells().size() - 1; i++){
                 System.out.println(i + ") " + player.getKnownSpells().get(i).getName());
             }
-
+            //Choose enemy iff more than 1
+            int enemyIndex = 0;
             System.out.println("What spell do you want to use ?");
             int choice = scanner.requestInt();
-            player.getKnownSpells().get(choice).spellMechanic();
+            player.getKnownSpells().get(choice).spellMechanic(player, enemies.get(enemyIndex));
         }
 
         return !player.isDead();

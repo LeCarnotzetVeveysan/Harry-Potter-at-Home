@@ -1,5 +1,7 @@
 package hpah.core;
 
+import static hpah.core.House.*;
+
 public abstract class Character {
 
     public String name;
@@ -13,11 +15,22 @@ public abstract class Character {
     }
 
     public void attack(Character target){
-        target.removeHealth(power);
+        double mult = (target.getClass() == Wizard.class && ((Wizard) target).getHouse() == GRYFFINDOR) ? 0.85 : 1;
+        int damage = (int) Math.round(power * mult);
+        target.removeHealth(damage);
+        System.out.println(name + " attacks and deals " + damage + " damage to you.");
     }
 
     public boolean isDead(){
         return health <= 0;
+    }
+
+    public int getHealth(){
+        return health;
+    }
+
+    public int getPower() {
+        return power;
     }
 
     public void removeHealth(int amount){

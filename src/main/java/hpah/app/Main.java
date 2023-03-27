@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         OptiScanner scanner = new OptiScanner(System.in);
         System.out.println("What's your name ?");
@@ -17,9 +17,6 @@ public class Main {
 
         Game mainGame = new Game(playerName);
         mainGame.playGame();
-
-        System.out.println("fini");
-
 
     }
 }
