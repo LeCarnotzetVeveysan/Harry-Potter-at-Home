@@ -4,8 +4,12 @@ import hpah.other.OptiScanner;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Random;
 
 import static hpah.core.House.GRYFFINDOR;
+import static hpah.core.House.SLYTHERIN;
+import static hpah.other.GeneralFunctions.countdown;
 
 public abstract class AbstractLevel {
 
@@ -66,7 +70,24 @@ public abstract class AbstractLevel {
                 player.setPickedUpSword(true);
             }
         }
-        //Add switching sides for Slytherin
+        if(getClass() == Level3.class){
+            learnPatronum(player);
+        }
+        if(getClass() == Level6.class){
+            if(player.getHouse() == SLYTHERIN){
+                System.out.println("You may change sides and join the Deatheaters. ");
+                System.out.println("Do you choose to do it ? This means resigning from your Hogwarts diploma.");
+                String choice = scanner.requestString().toLowerCase();
+
+                if (choice.equals("y") || choice.equals("yes")) {
+                    player.setHasSwitchedSides(true);
+                    return false;
+                } else {
+                    System.out.println("Then prepare for a fight !");
+                }
+            }
+        }
+
 
         while (!isLevelCleared() && !player.isDead()){
 
@@ -134,6 +155,40 @@ public abstract class AbstractLevel {
         }
 
         return !player.isDead();
+    }
+
+    private void learnPatronum(Wizard player) throws InterruptedException {
+        System.out.println("To learn Expecto Patronum, you will need to know the magical animals of the world.");
+        System.out.println("I will give you letters, and you must find an animal with part or all of them.");
+        System.out.println("Are you ready ?");
+        String choice = scanner.requestString().toLowerCase();
+
+        if (choice.equals("y") || choice.equals("yes")) {
+            String[] objects = new String[]{"griffin", "basilisk", "centaur", "chimera", "elf"};
+            Random random = new Random();
+            String chosenObject = objects[random.nextInt(5)];
+            String[] tempLetters = chosenObject.split("");
+            ArrayList<String> letters = new ArrayList<>();
+            letters.addAll(Arrays.asList(tempLetters));
+            for (int i = 0; i < random.nextInt(2); i++) {
+                letters.add(String.valueOf((char) random.nextInt(97, 122)));
+            }
+            Collections.shuffle(letters);
+            countdown();
+            System.out.println("Letters are " + Arrays.toString(letters.toArray()));
+            long startTime = System.currentTimeMillis();
+            System.out.println("What is the hidden object ?");
+            String answer = scanner.requestString();
+            if (answer.toLowerCase().equals(chosenObject)) {
+                long endTime = System.currentTimeMillis();
+                int timeTaken = (int) Math.round((endTime - startTime)/1000);
+                if(timeTaken < 5){
+                    player.learnSpell(new Spell('e', "Expecto patronum", 0.8));
+                }
+            } else {
+                System.out.println("Sadly this isn't a magical animal.");
+            }
+        }
     }
 
 }

@@ -4,9 +4,10 @@ import static hpah.core.House.*;
 
 public abstract class Character {
 
-    public String name;
+    private String name;
     private int health;
     private int power;
+    private boolean canAttack;
 
     public void setStats(String inputName, int inputHealth, int inputPower){
         name = inputName;

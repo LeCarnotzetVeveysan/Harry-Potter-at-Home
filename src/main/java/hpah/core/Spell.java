@@ -1,13 +1,12 @@
 package hpah.core;
 
+import hpah.other.GeneralFunctions;
 import hpah.other.OptiScanner;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Random;
+import java.util.*;
 
 import static hpah.core.House.SLYTHERIN;
+import static hpah.other.GeneralFunctions.countdown;
 import static java.lang.Thread.sleep;
 
 public class Spell extends AbstractSpell {
@@ -23,30 +22,11 @@ public class Spell extends AbstractSpell {
         switch (super.getSpellCode()){
             case 'w' -> spellWingardium(player, enemy);
             case 'a' -> spellAccio(player, enemy);
+            case 'e' -> spellExpecto(enemy);
         }
     }
 
-    private void countdown() throws InterruptedException {
-        System.out.println("Get ready !");
-        sleep(1000);
-        System.out.print("3");
-        sleep(333);
-        System.out.print(".");
-        sleep(333);
-        System.out.print(".");
-        sleep(333);
-        System.out.print("2");
-        sleep(333);
-        System.out.print(".");
-        sleep(333);
-        System.out.print(".");
-        sleep(333);
-        System.out.print("1");
-        sleep(333);
-        System.out.print(".");
-        sleep(333);
-        System.out.println(".");
-    }
+
 
     private void spellWingardium(Wizard player, AbstractEnemy enemy) throws InterruptedException {
 
@@ -113,6 +93,15 @@ public class Spell extends AbstractSpell {
             } else {
                 System.out.println("You manage to pull out a molar. However, you get knocked out when it hits you.");
             }
+        }
+    }
+
+    private void spellExpecto(AbstractEnemy enemy) {
+        if(enemy.getName().equals("Dementor")){
+            System.out.println("Expecto patronum is super effective. The dementor is gone.");
+            enemy.removeHealth(enemy.getHealth());
+        } else {
+            System.out.println("This spell has no effect on this enemy.");
         }
     }
 }

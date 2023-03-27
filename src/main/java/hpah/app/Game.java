@@ -48,10 +48,10 @@ public class Game {
             Level1 year1 = new Level1();
             Level2 year2 = new Level2();
             Level3 year3 = new Level3();
-            Level3 year4 = new Level3();
-            Level3 year5 = new Level3();
-            Level3 year6 = new Level3();
-            Level3 year7 = new Level3();
+            Level4 year4 = new Level4();
+            Level5 year5 = new Level5();
+            Level6 year6 = new Level6();
+            Level7 year7 = new Level7();
             ArrayList<AbstractLevel> years = new ArrayList<>(Arrays.asList(
                     year1, year2, year3, year4, year5, year6, year7 ));
 
@@ -66,6 +66,8 @@ public class Game {
 
             if(wizard.isDead()){
                 System.out.println("Sadly, you are dead, therefore you can't get your wizards diploma.");
+            } else if(wizard.getHasSwitchedSides()) {
+                System.out.println("You are alive but during the battle of Hogwarts you died. A shame");
             } else {
                 System.out.println("You successfully passed all your years at Hogwarts. Here is your diploma.");
                 System.out.println("You are now a wizard harry !");

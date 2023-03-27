@@ -15,7 +15,6 @@ public class Wizard extends Character {
 
     public Wizard(String inputName){
         super.setStats(inputName, 200, 25);
-        name = inputName;
         pet = null;
         wand = null;
         house = null;
@@ -37,10 +36,6 @@ public class Wizard extends Character {
 
     public void learnSpell(Spell inputSpell){
         knownSpells.add(inputSpell);
-    }
-
-    public String getName(){
-        return name;
     }
 
     public House getHouse(){
