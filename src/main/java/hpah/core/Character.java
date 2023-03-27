@@ -19,7 +19,17 @@ public abstract class Character {
         int damage = (int) Math.round(power * mult);
         target.removeHealth(damage);
         System.out.println(name + " attacks and deals " + damage + " damage to you.");
-        System.out.println("You now have " + target.getHealth() + " health.");
+        if(target.isDead()){
+            System.out.println("Sadly, you died.");
+        } else {
+            System.out.println("You now have " + target.getHealth() + " health.");
+        }
+
+    }
+
+    public void attackWithSword(Character target){
+        target.removeHealth(target.getHealth());
+        System.out.println("Your attack insta-killed the Basilisk.");
     }
 
     public boolean isDead(){
@@ -38,13 +48,17 @@ public abstract class Character {
         return name;
     }
 
+    public void addHealth(int amount){
+        health += amount;
+    }
+
     public void removeHealth(int amount){
         health -= amount;
     }
 
     @Override
     public String toString(){
-        return name + ", " + health + " HP, " + power + " power";
+        return name + ", " + health + " HP";
     }
 
 }

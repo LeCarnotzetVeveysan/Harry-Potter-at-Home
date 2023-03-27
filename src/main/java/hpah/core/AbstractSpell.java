@@ -2,6 +2,8 @@ package hpah.core;
 
 import java.util.Random;
 
+import static hpah.core.House.RAVENCLAW;
+
 public abstract class AbstractSpell {
 
     private char spellCode;
@@ -22,13 +24,15 @@ public abstract class AbstractSpell {
         return name;
     }
 
-    public boolean spellAttempt(){
+    public boolean spellAttempt(Wizard player){
         Random random = new Random();
         double attempt = random.nextDouble(1);
-        if(attempt < successChance){
-            System.out.println("Your attempt to cast " + name + " is successful");
+        double bonus = player.getHouse() == RAVENCLAW ? 0.1 : 0;
+        if(attempt < successChance + bonus){
+            System.out.println("Your attempt to cast " + name + " is successful.");
             return true;
         } else {
+            System.out.println("Sadly, you were not precise enough while casting your spell.");
             return false;
         }
     }

@@ -67,7 +67,7 @@ public class Game {
             if(wizard.isDead()){
                 System.out.println("Sadly, you are dead, therefore you can't get your wizards diploma.");
             } else {
-                System.out.println("You successfully passed all your years at Hogwarts. Here is your diploma");
+                System.out.println("You successfully passed all your years at Hogwarts. Here is your diploma.");
                 System.out.println("You are now a wizard harry !");
             }
 
