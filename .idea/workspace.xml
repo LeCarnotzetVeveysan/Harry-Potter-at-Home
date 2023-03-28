@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Finished all levels.&#10;Playtest needed and bonuses at end of year.">
+    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Added quick bonuses at end of year.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/app/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/app/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Character.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,8 @@
       <workItem from="1679856094273" duration="1921000" />
       <workItem from="1679924986826" duration="2031000" />
       <workItem from="1679943936570" duration="13068000" />
-      <workItem from="1679986498320" duration="9012000" />
+      <workItem from="1679986498320" duration="9677000" />
+      <workItem from="1680008500292" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678704823002</created>
@@ -206,11 +205,29 @@
       <option name="project" value="LOCAL" />
       <updated>1679995330167</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added quick bonuses at end of year.">
+      <created>1679996165008</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1679996165008</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
@@ -229,6 +246,7 @@
     <MESSAGE value="Finished level 2.&#10;Added WingardiumLeviosa easy mode" />
     <MESSAGE value="Finished Level 3&#10;More work on diverse aspects" />
     <MESSAGE value="Finished all levels.&#10;Playtest needed and bonuses at end of year." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished all levels.&#10;Playtest needed and bonuses at end of year." />
+    <MESSAGE value="Added quick bonuses at end of year." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added quick bonuses at end of year." />
   </component>
 </project>

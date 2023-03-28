@@ -36,7 +36,7 @@ public class Game {
         wizard.setWand(new Wand(chosenCore, chosenLength));
 
         SortingHat sortingHat = new SortingHat();
-        sortingHat.chooseHouse(wizard);
+        sortingHat.assignHouse(wizard);
         System.out.println(playerName + ", you are now in house " + wizard.getHouse());
 
         System.out.println("Are you ready to start your journey (Y - Yes / N - No) ?");
