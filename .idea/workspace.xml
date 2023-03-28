@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Finished Level 3&#10;More work on diverse aspects">
+    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Finished all levels.&#10;Playtest needed and bonuses at end of year.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hpah/app/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/app/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/AbstractEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/AbstractEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/AbstractLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/AbstractLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Boss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Boss.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Level4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Level4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Level5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Level5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Level6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Level6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Level7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Level7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Spell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Wand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Wand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Wizard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +92,7 @@
       <workItem from="1679856094273" duration="1921000" />
       <workItem from="1679924986826" duration="2031000" />
       <workItem from="1679943936570" duration="13068000" />
-      <workItem from="1679986498320" duration="8050000" />
+      <workItem from="1679986498320" duration="9012000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678704823002</created>
@@ -210,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679957072245</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Finished all levels.&#10;Playtest needed and bonuses at end of year.">
+      <created>1679995330167</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679995330167</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +228,7 @@
     <MESSAGE value="Added the rest of the levels and Enemy creation" />
     <MESSAGE value="Finished level 2.&#10;Added WingardiumLeviosa easy mode" />
     <MESSAGE value="Finished Level 3&#10;More work on diverse aspects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Level 3&#10;More work on diverse aspects" />
+    <MESSAGE value="Finished all levels.&#10;Playtest needed and bonuses at end of year." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished all levels.&#10;Playtest needed and bonuses at end of year." />
   </component>
 </project>

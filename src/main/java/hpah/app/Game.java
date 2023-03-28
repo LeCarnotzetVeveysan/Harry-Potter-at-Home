@@ -52,10 +52,8 @@ public class Game {
             Level5 year5 = new Level5();
             Level6 year6 = new Level6();
             Level7 year7 = new Level7();
-            //ArrayList<AbstractLevel> years = new ArrayList<>(Arrays.asList(
-                    //year1, year2, year3, year4, year5, year6, year7 ));
-            ArrayList<AbstractLevel> years = new ArrayList<>(Arrays.asList(year7));
-
+            ArrayList<AbstractLevel> years = new ArrayList<>(Arrays.asList(
+                    year1, year2, year3, year4, year5, year6, year7 ));
 
             for (int i = 0; i < years.size(); i++){
                 boolean succeeded = years.get(i).playLevel(wizard);
@@ -63,6 +61,17 @@ public class Game {
                     break;
                 } else {
                     System.out.println("Congratulations ! You passed year " + (i + 1) + ". " + (6-i) + " years to go.");
+                    System.out.println("You gain 1 potion");
+                    wizard.gainPotion();
+                    System.out.println("Do you want to increase your life (0) of your power (1) ");
+                    int choiceIndex = scanner.requestInt("",1);
+                    if(choiceIndex == 0){
+                        System.out.println("You gain 50 life.");
+                        wizard.addHealth(50);
+                    } else {
+                        System.out.println("You gain 10 power.");
+                        wizard.addHealth(10);
+                    }
                 }
             }
 

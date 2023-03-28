@@ -51,6 +51,10 @@ public abstract class Character {
         return power;
     }
 
+    public void addPower(int amount){
+        power += amount;
+    }
+
     public String getName(){
         return name;
     }
