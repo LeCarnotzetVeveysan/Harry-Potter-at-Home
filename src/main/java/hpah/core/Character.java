@@ -1,5 +1,9 @@
 package hpah.core;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import static hpah.core.House.*;
 
 public abstract class Character {
@@ -7,12 +11,14 @@ public abstract class Character {
     private String name;
     private int health;
     private int power;
-    private boolean canAttack;
+    private int distance;
+
 
     public void setStats(String inputName, int inputHealth, int inputPower){
         name = inputName;
         health = inputHealth;
         power = inputPower;
+        distance = 100;
     }
 
     public void attack(Character target){
@@ -57,9 +63,18 @@ public abstract class Character {
         health -= amount;
     }
 
+    public int getDistance() {
+        return distance;
+    }
+
+    public void modifyDistance(int amount){
+        distance += amount;
+    }
+
     @Override
     public String toString(){
-        return name + ", " + health + " HP";
+        List<String> reqDistance = new ArrayList<>(Arrays.asList("Portkey", "Voldemort", "Bellatrix Lestrange"));
+        return name + ", " + health + " HP " + (reqDistance.contains(name) ? (", Distance : " + getDistance()) : "");
     }
 
 }

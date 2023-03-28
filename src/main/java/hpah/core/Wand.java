@@ -10,4 +10,11 @@ public class Wand {
         size = inputSize;
     }
 
+    public Core getCore(){
+        return core;
+    }
+
+    public int getSize() {
+        return size;
+    }
 }

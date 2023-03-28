@@ -52,10 +52,12 @@ public class Game {
             Level5 year5 = new Level5();
             Level6 year6 = new Level6();
             Level7 year7 = new Level7();
-            ArrayList<AbstractLevel> years = new ArrayList<>(Arrays.asList(
-                    year1, year2, year3, year4, year5, year6, year7 ));
+            //ArrayList<AbstractLevel> years = new ArrayList<>(Arrays.asList(
+                    //year1, year2, year3, year4, year5, year6, year7 ));
+            ArrayList<AbstractLevel> years = new ArrayList<>(Arrays.asList(year7));
 
-            for (int i = 0; i <= 6; i++){
+
+            for (int i = 0; i < years.size(); i++){
                 boolean succeeded = years.get(i).playLevel(wizard);
                 if(!succeeded){
                     break;

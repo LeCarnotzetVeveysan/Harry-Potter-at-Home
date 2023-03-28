@@ -34,6 +34,10 @@ public class Wizard extends Character {
         wand = inputWand;
     }
 
+    public Wand getWand(){
+        return wand;
+    }
+
     public void learnSpell(Spell inputSpell){
         knownSpells.add(inputSpell);
     }

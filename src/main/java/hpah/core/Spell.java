@@ -7,7 +7,6 @@ import java.util.*;
 
 import static hpah.core.House.SLYTHERIN;
 import static hpah.other.GeneralFunctions.countdown;
-import static java.lang.Thread.sleep;
 
 public class Spell extends AbstractSpell {
 
@@ -23,20 +22,20 @@ public class Spell extends AbstractSpell {
             case 'w' -> spellWingardium(player, enemy);
             case 'a' -> spellAccio(player, enemy);
             case 'e' -> spellExpecto(enemy);
+            case 's' -> spellSectumsempra(enemy);
+            case 'x' -> spellExpelliarmus(enemy);
         }
     }
 
-
-
     private void spellWingardium(Wizard player, AbstractEnemy enemy) throws InterruptedException {
 
-        if (!enemy.getName().equals("Troll")) {
+        if (!enemy.getName().equals("Troll") && !enemy.getName().equals("Dolores Ombrage")) {
             System.out.println("However, this spell is useless here");
         } else {
 
             System.out.println("""
-                    To beat the troll, you need  to lift up an object in the room and drop it on it's head.\s
-                    You will be given some letters and you must find and object name with some or all of item.\s
+                    You need  to lift up an object and drop it on your enemy's head.\s
+                    You will be given some letters and you must find and object name with some or all of them.\s
                     The quicker you find it, the more damage will be inflicted. \s
                     Watching the scene from the movie might help you with this spell.""");
             System.out.println("Are you ready ?");
@@ -46,15 +45,16 @@ public class Spell extends AbstractSpell {
 
             if (choice.equals("y") || choice.equals("yes")) {
                 System.out.println("Perfect !");
-                String[] objects = new String[]{"gg", "gg", "gg"};
-                //String[] objects = new String[]{"tp", "perfume", "manhole"};
+                String[] objects = new String[0];
+                if(enemy.getName().equals("Troll")) {
+                    objects = new String[]{"tp", "perfume", "manhole"};
+                } else if (enemy.getName().equals("Dolores Ombrage")) {
+                    objects = new String[]{"rock", "tent", "bottle"};
+                }
                 Random random = new Random();
                 String chosenObject = objects[random.nextInt(3)];
                 String[] tempLetters = chosenObject.split("");
-                ArrayList<String> letters = new ArrayList<>();
-                for (String s : tempLetters) {
-                    letters.add(s);
-                }
+                ArrayList<String> letters = new ArrayList<>(Arrays.asList(tempLetters));
                 for (int i = 0; i < random.nextInt(2); i++) {
                     letters.add(String.valueOf((char) random.nextInt(97, 122)));
                 }
@@ -93,6 +93,16 @@ public class Spell extends AbstractSpell {
             } else {
                 System.out.println("You manage to pull out a molar. However, you get knocked out when it hits you.");
             }
+        } else if (enemy.getName().equals("Portkey")) {
+            int chance = 100 - enemy.getDistance();
+            Random random = new Random();
+            if(random.nextInt(100) <= chance){
+                System.out.println("You managed to pull the Portkey !");
+                enemy.removeHealth(1);
+                System.out.println("Voldemort disappears and Peter Pettigrew runs away");
+            } else {
+                System.out.println("Sadly you weren't precise enough.");
+            }
         }
     }
 
@@ -103,5 +113,21 @@ public class Spell extends AbstractSpell {
         } else {
             System.out.println("This spell has no effect on this enemy.");
         }
+    }
+
+    private void spellSectumsempra(AbstractEnemy enemy) {
+        if(enemy.getName().contains("Deatheater")){
+            System.out.println("This spell is super effective against the deatheater.");
+            enemy.removeHealth(enemy.getHealth());
+        } else {
+            System.out.println("This enemy is immune to the spell Sectumsempra.");
+        }
+    }
+
+    private void spellExpelliarmus(AbstractEnemy enemy) {
+        Random random = new Random();
+        int distanceRepelled = random.nextInt(10, 30);
+        enemy.modifyDistance(distanceRepelled);
+        System.out.println("You pushed " + enemy.getName() + " back by a distance of " + distanceRepelled);
     }
 }
