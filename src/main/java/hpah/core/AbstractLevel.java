@@ -120,7 +120,7 @@ public abstract class AbstractLevel {
                 } else {
                 System.out.println("You still have " + turnTimer + " turns before Dolores takes out the fireworks.");
                 }
-            } else {
+            } else if(getClass() == Level7.class) {
                 if(turnTimer == 0) {
                     System.out.println("You survived long enough against Voldemort and Bellatrix !");
                     System.out.println("Tired, they decide to flee, far from Hogwarts.");

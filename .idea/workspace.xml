@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Added quick bonuses at end of year.">
+    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="SortingHat refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
   <component name="RunManager">
     <configuration name="HPAH" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="hpah.app.Main" />
-      <module name="rph_potter" />
+      <module name="Harry-Potter-at-Home" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -91,7 +92,7 @@
       <workItem from="1679924986826" duration="2031000" />
       <workItem from="1679943936570" duration="13068000" />
       <workItem from="1679986498320" duration="9677000" />
-      <workItem from="1680008500292" duration="297000" />
+      <workItem from="1680008500292" duration="1321000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678704823002</created>
@@ -212,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679996165008</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="SortingHat refactor">
+      <created>1680009040609</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1680009040609</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +255,7 @@
     <MESSAGE value="Finished Level 3&#10;More work on diverse aspects" />
     <MESSAGE value="Finished all levels.&#10;Playtest needed and bonuses at end of year." />
     <MESSAGE value="Added quick bonuses at end of year." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added quick bonuses at end of year." />
+    <MESSAGE value="SortingHat refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="SortingHat refactor" />
   </component>
 </project>
