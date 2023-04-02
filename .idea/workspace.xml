@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Added maxhealth to character, boss, enemy and wizard&#10;Corrected spell too" />
+    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Corrected expecto patronum learning in AbstractLevel" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +96,7 @@
       <workItem from="1680025144672" duration="72000" />
       <workItem from="1680035138029" duration="3005000" />
       <workItem from="1680252457735" duration="19000" />
-      <workItem from="1680464436353" duration="1186000" />
+      <workItem from="1680464436353" duration="1845000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678704823002</created>
@@ -238,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680465383627</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Corrected expecto patronum learning in AbstractLevel">
+      <created>1680466158140</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1680466158140</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +283,7 @@
     <MESSAGE value="SortingHat refactor" />
     <MESSAGE value="Stayed on level 7" />
     <MESSAGE value="Added maxhealth to character, boss, enemy and wizard&#10;Corrected spell too" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added maxhealth to character, boss, enemy and wizard&#10;Corrected spell too" />
+    <MESSAGE value="Corrected expecto patronum learning in AbstractLevel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected expecto patronum learning in AbstractLevel" />
   </component>
 </project>

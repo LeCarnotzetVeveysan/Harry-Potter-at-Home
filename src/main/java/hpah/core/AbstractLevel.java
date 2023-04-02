@@ -272,11 +272,18 @@ public abstract class AbstractLevel {
                             e.attack(player);
                         }
                     }
-                    System.out.println("You try to learn Expecto patronum again");
+                    System.out.println("You try to learn Expecto patronum again.");
                     learnPatronum(player);
                 }
             } else {
                 System.out.println("Sadly this isn't a magical animal.");
+                for(AbstractEnemy e : enemies){
+                    if(!e.isDead() && e.getPower() >= 1) {
+                        e.attack(player);
+                    }
+                }
+                System.out.println("You try to learn Expecto patronum again.");
+                learnPatronum(player);
             }
         }
     }
