@@ -1,6 +1,5 @@
 package hpah.core;
 
-import hpah.other.GeneralFunctions;
 import hpah.other.OptiScanner;
 
 import java.util.*;
@@ -68,7 +67,7 @@ public class Spell extends AbstractSpell {
                     long endTime = System.currentTimeMillis();
                     int timeTaken = Math.round((endTime - startTime) / 1000);
                     System.out.println("You took " + timeTaken + " seconds to find the object");
-                    int damageDealt = 20 - timeTaken;
+                    int damageDealt = Math.max(20 - timeTaken, 0);
                     damageDealt = player.getHouse() == SLYTHERIN ? (int) Math.round(damageDealt * 1.2) : damageDealt;
                     System.out.println("You deal " + damageDealt + " to the troll.");
                     enemy.removeHealth(damageDealt);

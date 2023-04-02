@@ -7,7 +7,7 @@ public class Boss extends AbstractEnemy {
     private Wand wand;
 
     public Boss(String inputName, int inputHealth, int inputPower){
-        super.setStats(inputName, inputHealth, inputPower);
+        super.setStats(inputName, inputHealth, inputHealth, inputPower);
     }
 
     public void setWand(Wand inputWand){

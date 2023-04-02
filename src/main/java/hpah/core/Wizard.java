@@ -14,7 +14,7 @@ public class Wizard extends Character {
     private boolean pickedUpSword, hasSwitchedSides;
 
     public Wizard(String inputName){
-        super.setStats(inputName, 200, 25);
+        super.setStats(inputName, 200, 200,25);
         pet = null;
         wand = null;
         house = null;

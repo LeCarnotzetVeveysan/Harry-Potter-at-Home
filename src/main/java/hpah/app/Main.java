@@ -1,11 +1,6 @@
 package hpah.app;
 
-import hpah.core.*;
 import hpah.other.OptiScanner;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class Main {
 

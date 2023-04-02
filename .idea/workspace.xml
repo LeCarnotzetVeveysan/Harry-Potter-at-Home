@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="SortingHat refactor">
+    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Stayed on level 7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Boss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Boss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Spell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,13 +33,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2MxM3ePF3hpEOjBVGFUJFUJQztz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -42,15 +41,24 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15527344&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.archetype.catalogs&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -93,6 +101,11 @@
       <workItem from="1679943936570" duration="13068000" />
       <workItem from="1679986498320" duration="9677000" />
       <workItem from="1680008500292" duration="1321000" />
+      <workItem from="1680023038332" duration="951000" />
+      <workItem from="1680025144672" duration="72000" />
+      <workItem from="1680035138029" duration="3005000" />
+      <workItem from="1680252457735" duration="19000" />
+      <workItem from="1680464436353" duration="771000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678704823002</created>
@@ -220,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680009040609</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Stayed on level 7">
+      <created>1680023143045</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1680023143046</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +276,7 @@
     <MESSAGE value="Finished all levels.&#10;Playtest needed and bonuses at end of year." />
     <MESSAGE value="Added quick bonuses at end of year." />
     <MESSAGE value="SortingHat refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="SortingHat refactor" />
+    <MESSAGE value="Stayed on level 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stayed on level 7" />
   </component>
 </project>

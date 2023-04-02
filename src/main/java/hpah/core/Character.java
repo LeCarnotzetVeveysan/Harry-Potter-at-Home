@@ -10,13 +10,15 @@ public abstract class Character {
 
     private String name;
     private int health;
+    private int maximumHealth;
     private int power;
     private int distance;
 
 
-    public void setStats(String inputName, int inputHealth, int inputPower){
+    public void setStats(String inputName, int inputHealth, int inputMax, int inputPower){
         name = inputName;
         health = inputHealth;
+        maximumHealth = inputMax;
         power = inputPower;
         distance = 100;
     }
@@ -61,6 +63,9 @@ public abstract class Character {
 
     public void addHealth(int amount){
         health += amount;
+        if(health > maximumHealth){
+            health = maximumHealth;
+        }
     }
 
     public void removeHealth(int amount){
