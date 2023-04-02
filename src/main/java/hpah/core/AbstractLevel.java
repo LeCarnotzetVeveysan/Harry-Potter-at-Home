@@ -263,8 +263,17 @@ public abstract class AbstractLevel {
             if (answer.toLowerCase().equals(chosenObject)) {
                 long endTime = System.currentTimeMillis();
                 int timeTaken = Math.round((endTime - startTime)/1000);
-                if(timeTaken < 5){
+                if(timeTaken <= 10){
                     player.learnSpell(new Spell('e', "Expecto patronum", 0.8));
+                } else {
+                    System.out.println("Sadly this isn't a magical animal");
+                    for(AbstractEnemy e : enemies){
+                        if(!e.isDead() && e.getPower() >= 1) {
+                            e.attack(player);
+                        }
+                    }
+                    System.out.println("You try to learn Expecto patronum again");
+                    learnPatronum(player);
                 }
             } else {
                 System.out.println("Sadly this isn't a magical animal.");
