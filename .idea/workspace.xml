@@ -4,43 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Corrected expecto patronum learning in AbstractLevel v2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hpah/app/GameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hpah/app/GameData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hpah/app/GameOverController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hpah/app/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hpah/app/UpgradesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmls/game-over.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmls/level1.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmls/level2.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmls/level3.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmls/level4.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmls/level5.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmls/level6.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmls/level7.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmls/menu.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxmls/upgrades.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/basilic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/deatheater.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/dementor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/dent.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/epee.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/lestrange.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/ombrage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/pettigrew.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/portoloin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/troll.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/voldemort.jpg" afterDir="false" />
+    <list default="true" id="9c57a27c-35b9-4cdd-b872-ef13361a9e6d" name="Changes" comment="Graphics V2&#10;Added controllers, images and fxmls + Modified some other files">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/deatheater-mark.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/hogwarts-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/skull.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/app/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/app/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/app/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/app/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/app/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Boss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Boss.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/app/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/app/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/app/GameOverController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/app/GameOverController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/app/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/app/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hpah/core/SortingHat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/core/SortingHat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hpah/other/GeneralFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hpah/other/GeneralFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hpah/core/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/game-over.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/game-over.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/level2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/level2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/menu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +135,7 @@
       <workItem from="1680464436353" duration="2151000" />
       <workItem from="1682448999236" duration="3380000" />
       <workItem from="1682491666414" duration="1061000" />
-      <workItem from="1682598727259" duration="6016000" />
+      <workItem from="1682598727259" duration="7696000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678704823002</created>
@@ -315,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680466429979</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Graphics V2&#10;Added controllers, images and fxmls + Modified some other files">
+      <created>1682604876674</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1682604876674</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,6 +339,7 @@
     <MESSAGE value="Added maxhealth to character, boss, enemy and wizard&#10;Corrected spell too" />
     <MESSAGE value="Corrected expecto patronum learning in AbstractLevel" />
     <MESSAGE value="Corrected expecto patronum learning in AbstractLevel v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected expecto patronum learning in AbstractLevel v2" />
+    <MESSAGE value="Graphics V2&#10;Added controllers, images and fxmls + Modified some other files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Graphics V2&#10;Added controllers, images and fxmls + Modified some other files" />
   </component>
 </project>

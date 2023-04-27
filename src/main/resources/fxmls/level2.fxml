@@ -46,7 +46,7 @@
         <ImageView fitHeight="120.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
         <Label fx:id="enemy4HP" text="Health : HP" />
     </VBox>
-   <ImageView fitHeight="49.0" fitWidth="92.0" layoutX="250.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+   <ImageView fx:id="swordImage" fitHeight="49.0" fitWidth="92.0" layoutX="250.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
       <image>
          <Image url="@../pictures/epee.png" />
       </image>

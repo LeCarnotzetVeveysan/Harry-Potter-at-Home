@@ -3,9 +3,9 @@ package hpah.core;
 public class SortingHat {
 
     public void assignHouse(Wizard player){
-
+        String name = player.getName().toLowerCase();
         int sum = 0;
-        for(char c : player.getName().toCharArray()){
+        for(char c : name.toCharArray()){
             sum += c;
         }
         switch (sum%4){
@@ -14,6 +14,28 @@ public class SortingHat {
             case 2 -> player.setHouse(House.RAVENCLAW);
             case 3 -> player.setHouse(House.HUFFLEPUFF);
         }
+    }
+
+    public String showHouse(String inputName){
+        int sum = 0;
+        for(char c : inputName.toLowerCase().toCharArray()){
+            sum += c;
+        }
+        switch (sum%4){
+            case 0 -> {
+                return "Gryffindor";
+            }
+            case 1 -> {
+                return "Slytherin";
+            }
+            case 2 -> {
+                return "Ravenclaw";
+            }
+            case 3 -> {
+                return "Hufflepuff";
+            }
+        }
+        return "";
     }
 
 }

@@ -5,12 +5,15 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.Random;
+
+import static hpah.other.GeneralFunctions.gameOver;
 
 public class GameController {
 
@@ -22,6 +25,8 @@ public class GameController {
     public Label playerHP, enemy1HP, enemy2HP, enemy3HP, enemy4HP;
     @FXML
     public Label playerPotions;
+    @FXML
+    public ImageView swordImage;
 
     public void initialize(){
         wizard = GameData.getWizard();
@@ -67,7 +72,9 @@ public class GameController {
     }
 
     private void resultsOrAttack() throws IOException {
-        if(areAllEnemiesDead()){
+        if(wizard.isDead()){
+            gameOver(root);
+        } else if(areAllEnemiesDead()){
             loadUpgradesScene();
         } else {
             for (AbstractEnemy e : enemies){
@@ -138,7 +145,7 @@ public class GameController {
         showStats();
     }
 
-    public void clickedSword(MouseEvent mouseEvent) throws IOException {
+    public void clickedSword() throws IOException {
         if(wizard.getPickedUpSword()){
             wizard.attackWithSword(enemies[0]);
         }
@@ -146,13 +153,14 @@ public class GameController {
         showStats();
     }
 
-    public void clickedAccio(MouseEvent mouseEvent) throws IOException {
+    public void clickedAccio() throws IOException {
         if(GameData.getYear() == 2){
             if(wizard.getHouse() == House.GRYFFINDOR){
                 if(wizard.getPickedUpSword()){
                     //Do nothing
                 } else {
                     wizard.setPickedUpSword(true);
+                    swordImage.setImage(null);
                 }
             } else {
                 //Say pulled tooth
@@ -174,7 +182,7 @@ public class GameController {
         }
     }
 
-    public void clickedWingardium(MouseEvent mouseEvent) throws IOException {
+    public void clickedWingardium() throws IOException {
         for(AbstractEnemy e : enemies){
             if(e != null){
                 if(e.getName().equals("Troll") || e.getName().equals("Dolores Ombrage")){
@@ -186,7 +194,7 @@ public class GameController {
         showStats();
     }
 
-    public void clickedSectum(MouseEvent mouseEvent) throws IOException {
+    public void clickedSectum() throws IOException {
         for(AbstractEnemy e : enemies){
             if(e != null){
                 wizard.attack(e);
@@ -199,12 +207,7 @@ public class GameController {
     public void clickedSwitch() throws IOException {
         if(GameData.getYear() == 6){
             wizard.setHasSwitchedSides(true);
-            Stage stage = (Stage) root.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(GUI.class.getResource("/fxmls/game-over.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-            stage.setTitle("Game Over");
-            stage.setScene(scene);
-            stage.show();
+            gameOver(root);
         } else {
             // Do nothing
         }
