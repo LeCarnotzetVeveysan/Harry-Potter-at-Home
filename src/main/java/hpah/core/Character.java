@@ -1,5 +1,7 @@
 package hpah.core;
 
+import hpah.app.GameData;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -21,6 +23,15 @@ public abstract class Character {
         maximumHealth = inputMax;
         power = inputPower;
         distance = 100;
+    }
+
+    public void increaseHealth(){
+        maximumHealth += 25;
+        health += 25;
+    }
+
+    public void increasePower(){
+        power += 10;
     }
 
     public void attack(Character target){
@@ -48,6 +59,8 @@ public abstract class Character {
     public int getHealth(){
         return health;
     }
+
+    public int getMaxhealth(){return maximumHealth; }
 
     public int getPower() {
         return power;

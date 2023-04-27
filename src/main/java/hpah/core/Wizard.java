@@ -1,6 +1,7 @@
 package hpah.core;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import static hpah.core.House.HUFFLEPUFF;
 
@@ -78,7 +79,8 @@ public class Wizard extends Character {
         numberOfPotions--;
     }
 
-    public void gainPotion(){
-        numberOfPotions++;
+    public void gainPotions(){
+        Random random = new Random();
+        numberOfPotions += random.nextInt(1,4);
     }
 }

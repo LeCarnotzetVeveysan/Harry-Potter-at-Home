@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="hpah.app.MenuController">
+
+    <Label text="Welcome to Harry Potter at Home" AnchorPane.leftAnchor="200" AnchorPane.topAnchor="50"/>
+
+    <TextField fx:id="nameInput" promptText="Enter your name" AnchorPane.leftAnchor="200" AnchorPane.topAnchor="100" prefWidth="200"/>
+
+    <Button text="Start game" onMouseClicked="#clickedStartButton" AnchorPane.leftAnchor="250" AnchorPane.topAnchor="150" prefWidth="100"/>
+
+</AnchorPane>

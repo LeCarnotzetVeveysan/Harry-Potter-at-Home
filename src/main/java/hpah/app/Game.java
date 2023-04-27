@@ -62,7 +62,7 @@ public class Game {
                 } else {
                     System.out.println("Congratulations ! You passed year " + (i + 1) + ". " + (6-i) + " years to go.");
                     System.out.println("You gain 1 potion");
-                    wizard.gainPotion();
+                    wizard.gainPotions();
                     System.out.println("Do you want to increase your life (0) of your power (1) ");
                     int choiceIndex = scanner.requestInt("",1);
                     if(choiceIndex == 0){
