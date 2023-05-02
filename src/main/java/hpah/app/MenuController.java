@@ -42,6 +42,8 @@ public class MenuController {
         String name = nameInput.getText();
         if(!name.equals("")){
             Wizard wizard = new Wizard(name);
+            SortingHat hat = new SortingHat();
+            hat.assignHouse(wizard);
             GameData.setWizard(wizard);
             newCombatScene(root, "Combat scene");
         }

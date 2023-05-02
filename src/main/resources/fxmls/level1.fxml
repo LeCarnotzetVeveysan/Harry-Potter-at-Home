@@ -17,15 +17,15 @@
       <Label fx:id="playerPotions" text="Potions : N°" />
    </VBox>
    <HBox layoutX="116.0" layoutY="366.0" spacing="10.0">
-      <Button mnemonicParsing="false" onMouseClicked="#clickedAccio" text="Accio"/>
-      <Button mnemonicParsing="false" onMouseClicked="#clickedExpecto" text="Expecto Patronum"/>
-      <Button mnemonicParsing="false" onMouseClicked="#clickedWingardium" text="Wingardium"/>
-      <Button mnemonicParsing="false" onMouseClicked="#clickedSectum" text="Sectumsempra"/>
+      <Button mnemonicParsing="false" onMouseClicked="#clickedAccio" text="Accio" />
+      <Button mnemonicParsing="false" onMouseClicked="#clickedExpecto" text="Expecto Patronum" />
+      <Button mnemonicParsing="false" onMouseClicked="#clickedWingardium" text="Wingardium" />
+      <Button mnemonicParsing="false" onMouseClicked="#clickedSectum" text="Sectumsempra" />
    </HBox>
-   <HBox alignment="CENTER" layoutX="198.0" layoutY="331.0" prefHeight="34.0" prefWidth="201.0" spacing="10.0">
-      <Button mnemonicParsing="false" onMouseClicked="#clickedPotion" text="Drink a Potion"/>
-      <Button mnemonicParsing="false" onMouseClicked="#clickedSword" text="Sword Attack"/>
-      <Button mnemonicParsing="false" onMouseClicked="#clickedSwitch" text="Join Deatheaters"/>
+   <HBox alignment="CENTER" layoutX="116.0" layoutY="331.0" prefHeight="34.0" prefWidth="366.0" spacing="10.0">
+      <Button mnemonicParsing="false" onMouseClicked="#clickedPotion" text="Drink a Potion" />
+      <Button mnemonicParsing="false" onMouseClicked="#clickedSword" text="Sword Attack" />
+      <Button mnemonicParsing="false" onMouseClicked="#clickedSwitch" text="Join Deatheaters" />
    </HBox>
    <Button layoutX="482.0" layoutY="187.0" mnemonicParsing="false" onMouseClicked="#killAllEnemies" text="Kill all enemies" />
    <VBox alignment="CENTER" layoutX="250.0" layoutY="23.0">

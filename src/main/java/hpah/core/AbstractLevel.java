@@ -229,7 +229,7 @@ public abstract class AbstractLevel {
                             e.modifyDistance(-1 * distanceWalked);
                         }
                     } else {
-                        e.attack(player);
+                        e.enemyAttack(player);
                     }
                 }
             }
@@ -269,7 +269,7 @@ public abstract class AbstractLevel {
                     System.out.println("Sadly this isn't a magical animal");
                     for(AbstractEnemy e : enemies){
                         if(!e.isDead() && e.getPower() >= 1) {
-                            e.attack(player);
+                            e.enemyAttack(player);
                         }
                     }
                     System.out.println("You try to learn Expecto patronum again.");
@@ -279,7 +279,7 @@ public abstract class AbstractLevel {
                 System.out.println("Sadly this isn't a magical animal.");
                 for(AbstractEnemy e : enemies){
                     if(!e.isDead() && e.getPower() >= 1) {
-                        e.attack(player);
+                        e.enemyAttack(player);
                     }
                 }
                 System.out.println("You try to learn Expecto patronum again.");

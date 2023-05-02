@@ -1,7 +1,5 @@
 package hpah.core;
 
-import hpah.app.GameData;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -34,7 +32,7 @@ public abstract class Character {
         power += 10;
     }
 
-    public void attack(Character target){
+    public void enemyAttack(Character target){
         double mult = (target.getClass() == Wizard.class && ((Wizard) target).getHouse() == GRYFFINDOR) ? 0.85 : 1;
         int damage = (int) Math.round(power * mult);
         target.removeHealth(damage);
@@ -44,7 +42,15 @@ public abstract class Character {
         } else {
             System.out.println("You now have " + target.getHealth() + " health.");
         }
+    }
 
+    public void attackEnemy(AbstractEnemy target){
+        int damage = power;
+        target.removeHealth(damage);
+        System.out.println("You attack " + target.getName() + " and deal " + damage + " damage.");
+        if(target.isDead()){
+            System.out.println("Enemy is dead.");
+        }
     }
 
     public void attackWithSword(Character target){

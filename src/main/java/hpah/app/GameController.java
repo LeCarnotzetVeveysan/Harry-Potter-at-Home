@@ -6,14 +6,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.Random;
-
-import static hpah.other.GeneralFunctions.gameOver;
 
 public class GameController {
 
@@ -38,8 +35,17 @@ public class GameController {
         Stage stage = (Stage) root.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(GUI.class.getResource("/fxmls/upgrades.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-        stage.setTitle("Upgrades");
         stage.setScene(scene);
+        stage.setTitle("Upgrades");
+        stage.show();
+    }
+
+    private void loadGameOverScene() throws IOException {
+        Stage stage = (Stage) root.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(GUI.class.getResource("/fxmls/game-over.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        stage.setScene(scene);
+        stage.setTitle("Game over");
         stage.show();
     }
 
@@ -73,13 +79,13 @@ public class GameController {
 
     private void resultsOrAttack() throws IOException {
         if(wizard.isDead()){
-            gameOver(root);
+            loadGameOverScene();
         } else if(areAllEnemiesDead()){
             loadUpgradesScene();
         } else {
             for (AbstractEnemy e : enemies){
                 if(e != null) {
-                    e.attack(wizard);
+                    e.enemyAttack(wizard);
                 }
             }
         }
@@ -94,7 +100,6 @@ public class GameController {
                 enemies[0] = new Enemy("Dementor", 1000, 5);
                 enemies[1] = new Enemy("Dementor", 1000, 6);
                 enemies[2] = new Enemy("Dementor", 1000, 7);
-                enemies[3] = new Enemy("Dementor", 1000, 8);
             }
             case 4 -> {
                 enemies[0] = new Boss("Voldemort", 1000, 0);
@@ -158,14 +163,19 @@ public class GameController {
             if(wizard.getHouse() == House.GRYFFINDOR){
                 if(wizard.getPickedUpSword()){
                     //Do nothing
+                    System.out.println("You already have Godric's sword");
                 } else {
                     wizard.setPickedUpSword(true);
                     swordImage.setImage(null);
+                    System.out.println("You picked up Godric's sword");
                 }
             } else {
                 //Say pulled tooth
-                wizard.attack(enemies[0]);
+                System.out.println("You pulled a basiliks tooth and threw it back.");
+                wizard.attackEnemy(enemies[0]);
             }
+            resultsOrAttack();
+            showStats();
         } else if (GameData.getYear() == 4){
             Random random = new Random();
             if(random.nextInt(100) < (wizard.getHouse() == House.RAVENCLAW ? 90 : 80)){
@@ -177,6 +187,7 @@ public class GameController {
             }
         } else {
             //Tell there is no item
+            System.out.println("There is no item to pull");
             resultsOrAttack();
             showStats();
         }
@@ -186,7 +197,7 @@ public class GameController {
         for(AbstractEnemy e : enemies){
             if(e != null){
                 if(e.getName().equals("Troll") || e.getName().equals("Dolores Ombrage")){
-                    wizard.attack(e);
+                    wizard.attackEnemy(e);
                 }
             }
         }
@@ -197,7 +208,7 @@ public class GameController {
     public void clickedSectum() throws IOException {
         for(AbstractEnemy e : enemies){
             if(e != null){
-                wizard.attack(e);
+                wizard.attackEnemy(e);
             }
         }
         resultsOrAttack();
@@ -207,7 +218,7 @@ public class GameController {
     public void clickedSwitch() throws IOException {
         if(GameData.getYear() == 6){
             wizard.setHasSwitchedSides(true);
-            gameOver(root);
+            loadGameOverScene();
         } else {
             // Do nothing
         }

@@ -14,6 +14,7 @@ public class SortingHat {
             case 2 -> player.setHouse(House.RAVENCLAW);
             case 3 -> player.setHouse(House.HUFFLEPUFF);
         }
+        System.out.println("You are in house " + player.getHouse());
     }
 
     public String showHouse(String inputName){

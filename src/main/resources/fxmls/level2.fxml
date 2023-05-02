@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hpah.app.GameController">
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hpah.app.GameController">
     <VBox alignment="CENTER" layoutX="250.0" layoutY="200.0">
         <ImageView fitHeight="120.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../pictures/player.jpg" />
@@ -22,7 +22,7 @@
         <Button mnemonicParsing="false" onMouseClicked="#clickedWingardium" text="Wingardium" />
         <Button mnemonicParsing="false" onMouseClicked="#clickedSectum" text="Sectumsempra" />
     </HBox>
-    <HBox alignment="CENTER" layoutX="198.0" layoutY="331.0" prefHeight="34.0" prefWidth="201.0" spacing="10.0">
+    <HBox alignment="CENTER" layoutX="116.0" layoutY="331.0" prefHeight="34.0" prefWidth="366.0" spacing="10.0">
         <Button mnemonicParsing="false" onMouseClicked="#clickedPotion" text="Drink a Potion" />
         <Button mnemonicParsing="false" onMouseClicked="#clickedSword" text="Sword Attack" />
         <Button mnemonicParsing="false" onMouseClicked="#clickedSwitch" text="Join Deatheaters"/>

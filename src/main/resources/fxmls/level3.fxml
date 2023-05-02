@@ -22,7 +22,7 @@
         <Button mnemonicParsing="false" onMouseClicked="#clickedWingardium" text="Wingardium" />
         <Button mnemonicParsing="false" onMouseClicked="#clickedSectum" text="Sectumsempra" />
     </HBox>
-    <HBox alignment="CENTER" layoutX="198.0" layoutY="331.0" prefHeight="34.0" prefWidth="201.0" spacing="10.0">
+    <HBox alignment="CENTER" layoutX="116.0" layoutY="331.0" prefHeight="34.0" prefWidth="366.0" spacing="10.0">
         <Button mnemonicParsing="false" onMouseClicked="#clickedPotion" text="Drink a Potion" />
         <Button mnemonicParsing="false" onMouseClicked="#clickedSword" text="Sword Attack" />
         <Button mnemonicParsing="false" onMouseClicked="#clickedSwitch" text="Join Deatheaters"/>
